@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Styles.css" media="screen" />
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="box1">
+        <h1 style="font-size: 15px; text-align: center; font-weight: 700; color: white;"> 
+            PREFEITURA MUNICIPAL DE MARABÁ<br>
+            SECRETARIA MUNICIPAL DE SAÚDE<br>
+            DEPARTAMENTO CENTRAL DE REGULAÇÃO
+        </h1>
+    </div>
+
+    <div class="checkStage" >
+            <div class="number" style="font-weight: 900">01 <img src="https://img.icons8.com/color/48/000000/checked-radio-button--v1.png"/></div>
+            <Div class="letter">Pré-Cadastro</div>
+            <div class="number" style="font-weight: 900">02 <img src="https://img.icons8.com/color/48/000000/checked-radio-button--v1.png"/></div>
+            <Div class="letter">Consultas e outro Procedimentos Novos</div>
+            <div class="number" style="font-weight: 900">03 <img src="https://img.icons8.com/color/48/000000/checked-radio-button--v1.png"/></div>
+            <Div class="letter">Protocolo Para a Entrada no TFD</div>
+    </div>
+    
+    <div class="box2">
+        <br>
+        <div id="nameStage"><b>Protocolo Para a Entrada no TFD</b></div>
+        <form action="">
+            <fieldset id="Field1">
+                <br>
+                <div class="inputBox2">
+                    <label for="nome" class="labelInput3">USUÁRIO (A)</label>
+                    <label for="email" class="labelInput3" >CARTÃO SUS</label>
+                    <input type="text" name="nome" id="nome" class="inputUser" style="width: 80%;" required>
+                    <input type="text" name="cartaoSUS " id="CartaoSUS" class="inputUser" style="width: 100%;" required>
+                </div>
+            </Fieldset>
+            <Fieldset id="field2">
+                <div class="inputBox">
+                    <label for="telefone" class="labelInput3">ESPECIALIDADE</label>
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                </div>
+                <label for="data_nascimento" class="nascimento"><p>DATA DE ENTRADA</p></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br>
+                <div class="inputBox">
+                    <label for="cidade" class="labelInput">ATENDENDETE</label>
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>                   
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="estado" class="labelInput">FONE C. REGULAÇÃO</label>
+                    <input type="text" name="estado" id="estado" class="inputUser" required>                   
+                </div>
+                <br><br>
+                <div style="display: flex; justify-content: center;">
+                    <input type="submit" name="submit" id="submit">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
